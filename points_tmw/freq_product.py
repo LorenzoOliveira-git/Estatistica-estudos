@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("data/points_tmw.csv",sep=";",encoding='latin-1')
+df = pd.read_csv("./data/points_tmw.csv",sep=";",encoding='latin-1')
 df.head()
 
 # %%
