@@ -46,4 +46,6 @@ users = df.groupby(["idUsuario"]).agg(
 sumario = users[["idTransacao","qtdPontos"]].describe().rename(columns={"idTransacao":"Transactional Descriptions","qtdPontos":"Poins Descriptions"})
 
 print(sumario.to_markdown())
+
 # %%
+

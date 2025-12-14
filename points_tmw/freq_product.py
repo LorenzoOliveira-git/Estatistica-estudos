@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("./data/points_tmw.csv",sep=";",encoding='latin-1')
+df = pd.read_csv("../data/points_tmw.csv",sep=";",encoding='latin-1')
 df.head()
 
 # %%
@@ -40,7 +40,7 @@ freq_categoria
 
 import sqlalchemy
 
-engine = sqlalchemy.create_engine("sqlite:///data/tmw.db")
+engine = sqlalchemy.create_engine("sqlite:////data/tmw.db")
 df.to_sql("points",engine,if_exists="replace",index=False)
 
 # %%
